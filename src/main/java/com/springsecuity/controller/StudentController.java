@@ -33,7 +33,10 @@ public class StudentController {
         students.add(student);
         return student;
     }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> b91b944 ( adding database)
 }
