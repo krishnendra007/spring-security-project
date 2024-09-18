@@ -1,40 +1,38 @@
 package com.springsecuity.config;
 
-<<<<<<< HEAD
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-=======
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
->>>>>>> b91b944 ( adding database)
+
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-<<<<<<< HEAD
-=======
+
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
->>>>>>> b91b944 ( adding database)
+
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
-<<<<<<< HEAD
-=======
+
     @Autowired
     private UserDetailsService userDetailsService;
 
->>>>>>> b91b944 ( adding database)
+
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
 
@@ -63,8 +61,7 @@ public class SecurityConfig {
         }*/
         return http.build();
     }
-<<<<<<< HEAD
-=======
+
 
 //    @Bean
 //    public UserDetailsService userDetailsService (){
@@ -91,5 +88,4 @@ public class SecurityConfig {
         provider.setUserDetailsService(userDetailsService);
         return provider;
     }
->>>>>>> b91b944 ( adding database)
 }
